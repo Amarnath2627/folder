@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #555;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #222;
+  }
+  
+  .clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+  }
+  
+  .clip1 {
+    background: url(https://img.freepik.com/free-psd/3d-pink-flower-isolated-transparent-background_191095-16624.jpg?w=740&t=st=1702964175~exp=1702964775~hmac=7c8eae5125ef85c4731f9da5150833bc1edd17bbb2b20420ff58a0a200c7234f);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0% 0, 46% 0, 39% 100%, 0 100%);
+  }
+  
+  .clip2 {
+    background: url(https://img.freepik.com/free-vector/floral-card_53876-91231.jpg?w=826&t=st=1702964230~exp=1702964830~hmac=a1770d7436d5333d042be7fe9827249c4b018076b77e0540f47845e3a2af9024);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%);
+  }
+  
+  .clip3 {
+    background: url(https://img.freepik.com/free-photo/top-view-roses-flowers_23-2148860041.jpg?w=740&t=st=1702964274~exp=1702964874~hmac=aaaf3b1c8ad1dae18a15098942a7b04d3f550a2058713e47705dc0471cf1bff9);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(82% 0, 100% 0, 100% 100%, 63% 100%);
+  }
+  
+  .container:hover .clip {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+  
+  .container .clip:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  

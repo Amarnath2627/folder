@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .background {
+    background: url(https://img.freepik.com/free-photo/palm-leaves-shadow-beige_53876-95504.jpg?w=360&t=st=1705748470~exp=1705749070~hmac=5445eec3b0afb0298a6523b37e249ca2a2f92c159780bc3e95dfc880819c0845)
+  no-repeat center center/cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    fill: blue(0);
+  }
+  
+  .loading-text {
+    font-size: 50px;
+    color: red;
+  }
+  
